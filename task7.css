@@ -1,0 +1,67 @@
+/* Apply a soft gradient background and improve overall aesthetics */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: linear-gradient(to right, #e0f7fa, #e1bee7); /* Soft blue-purple gradient */
+  color: #333;
+}
+
+h1 {
+  text-align: center;
+  color: #4a148c;
+  margin-bottom: 20px;
+}
+
+#reloadBtn {
+  display: block;
+  margin: 0 auto 30px;
+  padding: 10px 25px;
+  font-size: 16px;
+  background-color: #7e57c2;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.2s;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+#reloadBtn:hover {
+  background-color: #5e35b1;
+  transform: scale(1.05);
+}
+
+#userContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+.user-card {
+  background-color: #ffffffee;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 15px;
+  width: 270px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.user-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+}
+
+.user-card h3 {
+  color: #6a1b9a;
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.user-card p {
+  margin: 5px 0;
+  line-height: 1.4;
+  font-size: 15px;
+}
